@@ -1,5 +1,5 @@
 var div = document.getElementById('log');
-var texto = ' Olá, Seja bem vindo a minha SinglePage ';
+var texto = ' Oi Luis, eu sei fazer uns efeitinhos legais kkkk ';
 
 function escrever(str, el) {
   var char = str.split('').reverse();
