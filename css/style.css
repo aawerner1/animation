@@ -1,0 +1,173 @@
+@import 'https://fonts.googleapis.com/css?family=Rubik+One';
+
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+/*  MENU */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.menu-toggle {
+  width: 70px;
+  height: 70px;
+  background: #ff4757;
+  position: absolute;
+  border-radius: 10px;
+  top: 20px;
+  right:20px;
+  cursor: pointer;
+  z-index: 1;
+  transition: .5s;
+}
+
+.menu-toggle span {
+  position: absolute;
+  display: block;
+  height: 4px;
+  background: #fff;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .5s;
+}
+
+.menu-toggle span:nth-child(1) {
+  top: 30%;
+}
+.menu-toggle span:nth-child(3) {
+  top: 70%;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+nav {
+  position: absolute;
+  top: 90px;
+  right: -100%;
+  transition: .3s;
+}
+
+nav.active {
+  right: 20px;
+}
+
+nav li {
+  list-style: none;
+}
+
+.portfolio {
+  background-color: #3c6382;
+}
+
+.contato {
+  background-color: #4a69bd;
+}
+
+.sobre {
+  background-color: #f6b93b;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#log {
+  text-align: center;
+  margin-top: 8%;
+  font-size: 3em;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.button {
+    margin-top: 3em;
+    margin-left: 1em;
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    position: relative;
+    border: 2px solid rgb(17, 145, 178);
+    border-radius: 5px;
+    background-color: rgb(113,194,215);
+}
+
+.button .content {
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    background-color: rgb(29,164,195);
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 6px 0 rgb(113,194,215);
+    border-radius: 5px;
+    transition: all 0.1s linear;
+}
+
+.button:active .content {
+    bottom: 0;
+    box-shadow: 0 0 0 rgb(113,194,215);
+  }
+
+.montain {
+  position:absolute;
+  width: 100%;
+  bottom:0;
+}
+
+
+@media (max-width: 600px) {
+
+  .menu-toggle {
+    width: 50px;
+    height: 50px;
+  }
+
+  #log {
+    margin: 15%;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    font-size: .8em;
+  }
+}
