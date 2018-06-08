@@ -66,6 +66,31 @@
   }
 }
 
+
+@-webkit-keyframes desfoque {
+  0% {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+  }
+  50% {
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+  }
+  100% {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+  }
+}
+
 .animateLeft {
   animation: animateLeft 1s;
 }
@@ -80,4 +105,8 @@
 
 .animateBottom {
   animation: animateBottom 1s;
+}
+
+.animateDesfoque {
+  animation: desfoque 1s infinite;
 }
