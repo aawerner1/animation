@@ -1,0 +1,20 @@
+.contato h1 {
+  text-align: center;
+  color: #fff;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 4em;
+  padding-top: 1.5em;
+  padding-bottom: .7em;
+}
+
+.network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.network img{
+  width: 200px;
+  margin-left: 20px;
+  margin-top: 50%;
+}

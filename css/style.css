@@ -1,14 +1,17 @@
-@import 'https://fonts.googleapis.com/css?family=Rubik+One';
-
+body{
+background: linear-gradient(to left, #e53935 , #e35d5b);
+}
 
 html,body{
     width: 100%;
     height:100%;
+
 }
 
 main {
   width: 100%;
   height: 100%;
+  z-index: 0;
 }
 
 .portfolio {
@@ -35,6 +38,11 @@ header {
 .btns {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.maincontainer {
+  display: flex;
   justify-content: center;
 }
 
@@ -87,20 +95,21 @@ header {
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   top: 90px;
-  right: -100%;
+  opacity: 0;
   transition: .3s;
 }
 
 nav.active {
   right: 20px;
+  opacity: 1;
+  z-index: 10;
 }
 
 nav li {
   list-style: none;
 }
-
 
 #log {
   text-align: center;
@@ -111,7 +120,7 @@ nav li {
 }
 
 .button {
-    margin-top: 3em;
+    margin-top: 5%;
     margin-left: 1em;
     display: inline-block;
     width: 180px;
@@ -151,13 +160,16 @@ nav li {
 
 @media (max-width: 600px) {
 
+  .btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: .5em;
+  }
+
   .menu-toggle {
     width: 50px;
     height: 50px;
-  }
-
-  nav {
-    position: fixed;
   }
 
   .tcard{

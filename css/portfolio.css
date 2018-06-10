@@ -1,0 +1,22 @@
+.portfolio h1 {
+  text-align: center;
+  color: #fff;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 4em;
+  padding-top: 1.5em;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons img {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+}

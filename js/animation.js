@@ -11,10 +11,3 @@ function escrever(str, el) {
 }
 
 escrever(texto, div);
-
-
-
-  $('.menu-toggle').click(function() {
-    $('.menu-toggle').toggleClass('active');
-    $('nav').toggleClass('active');
-  })
