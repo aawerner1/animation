@@ -11,10 +11,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .network img{
   width: 200px;
-  margin-left: 20px;
-  margin-top: 50%;
+  margin-top: 3%;
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+
+  .network img{
+    width: 100px;
+  }
+
 }
